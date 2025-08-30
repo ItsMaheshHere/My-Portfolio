@@ -1,0 +1,138 @@
+body{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+.name{
+  position: relative;
+  margin-top: 20px;
+  font-size: 35px;
+  font-weight: 600;
+  opacity: 0;
+  animation: name 0.8s forwards 0.4s;
+}
+@keyframes name{
+  0%{
+    opacity: 0;
+    margin-left: 40px;
+  }
+  100%{
+    opacity: 1;
+    margin-left: 85px;
+  }
+}
+
+.list{
+  position: relative;
+  margin-top: -0px;
+  margin-left: 550px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  font-size: 23px;
+}
+.home{
+  margin-left: 0px;
+  opacity: 0;
+  animation: home 0.5s forwards 0.6s;
+}
+@keyframes home{
+  0%{
+    opacity: 0;
+    margin-left: 0px;
+  }
+  100%{
+    opacity: 1;
+    margin-left: 20px;
+  }
+}
+
+.about{
+  opacity: 0;
+  animation: home 0.5s forwards 0.8s;
+}
+.projects{
+  opacity: 0;
+  animation: home 0.5s forwards 1s;
+}
+.skills{
+  opacity: 0;
+  animation: home 0.5s forwards 1.2s;
+}
+.certificate{
+  opacity: 0;
+  animation: home 0.5s forwards 1.4s;
+}
+.contact{
+  opacity: 0;
+  animation: home 0.5s forwards 1.6s;
+}
+
+.Home{
+  font-family: 'Ubuntu', sans-serif;
+}
+.text{
+  position: absolute;
+  font-size: 50px;
+  font-weight: 550;
+  top: 230px;
+  left: 610px;
+  animation: homesection 1.3s forwards 0.5s;
+  opacity: 0;
+}
+.name1{
+  position: absolute;
+  top: 230px;
+  left: 810px;
+  font-size: 50px;
+  font-weight: 600;
+  background: linear-gradient(134deg, #5335cf 0%, #de005e 25%, #f66e48 50%,#de005e 75%,#5335cf 100%);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s linear infinite,homesection 0.5s forwards 0.9s;
+  opacity: 0;
+}
+.text1{
+  position: absolute;
+  top: 290px;
+  left: 610px;
+  font-size: 40px;
+  font-weight: 500;
+  animation: homesection 0.5s forwards 1.3s;
+  opacity: 0;
+}
+.photo{
+  position: absolute;
+  height: 350px;
+  opacity: 0;
+  animation: photo 0.7s forwards 1s;
+}
+@keyframes homesection{
+  0%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(-30px)
+  }
+}
+
+@keyframes gradient{
+  100%{
+    background-position: 400%;
+  }
+}
+@keyframes photo{
+  0%{
+    opacity: 0;
+    top: 150px;
+    left: 120px;
+  }
+  100%{
+    opacity: 1;
+    top: 150px;
+    left: 160px;
+  }
+}
