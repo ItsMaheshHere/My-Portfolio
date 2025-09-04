@@ -20,6 +20,11 @@ body{
     margin-left: 85px;
   }
 }
+  @media (max-width:600px) {
+  .name{
+    font-size: 7vw;
+  }
+}
 
 .list{
   margin-top: -35px;
