@@ -23,6 +23,7 @@ body{
 @media (max-width:600px) {
   .name{
     font-size: 7vw;
+    color: #512edd;
   }
 }
 
