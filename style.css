@@ -1,12 +1,11 @@
 body{
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  overflow-x: hidden;
 }
 .name{
   position: relative;
   margin-top: 20px;
-  font-size: 35px;
+  font-size: 3vw;
   font-weight: 600;
   opacity: 0;
   animation: name 0.8s forwards 0.4s;
@@ -23,13 +22,12 @@ body{
 }
 
 .list{
-  position: relative;
-  margin-top: -0px;
-  margin-left: 550px;
+  margin-top: -35px;
+  margin-left: 500px;
   list-style: none;
   display: flex;
   gap: 10px;
-  font-size: 23px;
+  font-size: 1.8vw;
 }
 .home{
   margin-left: 0px;
@@ -72,19 +70,17 @@ body{
   font-family: 'Ubuntu', sans-serif;
 }
 .text{
-  position: absolute;
-  font-size: 50px;
-  font-weight: 550;
-  top: 230px;
-  left: 610px;
+  font-size: 4vw;
+  font-weight: 500;
+  margin-top: -19%;
+  margin-left: 600px;
   animation: homesection 1.3s forwards 0.5s;
   opacity: 0;
 }
 .name1{
-  position: absolute;
-  top: 230px;
-  left: 810px;
-  font-size: 50px;
+  margin-top: -75px;
+  margin-left: 810px;
+  font-size: 5vw;
   font-weight: 600;
   background: linear-gradient(134deg, #5335cf 0%, #de005e 25%, #f66e48 50%,#de005e 75%,#5335cf 100%);
   background-size: 400%;
@@ -94,19 +90,18 @@ body{
   opacity: 0;
 }
 .text1{
-  position: absolute;
-  top: 290px;
-  left: 610px;
-  font-size: 40px;
+  margin-left: 600px;
+  font-size: 3vw;
   font-weight: 500;
   animation: homesection 0.5s forwards 1.3s;
   opacity: 0;
 }
 .photo{
-  position: absolute;
+  margin-top: 10px;
   height: 350px;
   opacity: 0;
   animation: photo 0.7s forwards 1s;
+  border-radius: 5%;
 }
 @keyframes homesection{
   0%{
@@ -127,12 +122,19 @@ body{
 @keyframes photo{
   0%{
     opacity: 0;
-    top: 150px;
-    left: 120px;
+    margin-left: 130px;
   }
   100%{
     opacity: 1;
-    top: 150px;
-    left: 160px;
+    margin-left: 160px;
   }
+}
+.first-text{
+  margin-top: -76px;
+  margin-left: 790px;
+  font-size: 3vw;
+}
+.Home .first-text::before{
+  content:"";
+  border-left: 3px solid #512edd;
 }
